@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Nyumba</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <img src="images/nyumba-logo.jpg" alt="Nyumba logo" class="logo" />
+        <span class="brand-name">Nyumba</span>
+      </a>
+      <button id="navToggle3" class="nav-toggle" aria-label="Open navigation">☰</button>
+      <nav id="mainNav3" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <h1>Contact</h1>
+    <p>Reach out — we’re happy to help.</p>
+
+    <form id="contactForm" class="contact-form" novalidate>
+      <label>
+        Name
+        <input type="text" name="name" id="name" required minlength="2" />
+      </label>
+
+      <label>
+        Email
+        <input type="email" name="email" id="email" required />
+      </label>
+
+      <label>
+        Message
+        <textarea name="message" id="message" required minlength="10"></textarea>
+      </label>
+
+      <button type="submit" class="btn">Send Message</button>
+      <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+    </form>
+
+    <section class="contact-info">
+      <h2>Direct Contact</h2>
+      <p>Phone: <a href="tel:+256779522587">+256 779 522 587</a></p>
+      <p>CEO: Noel Etyang</p>
+      <img src="images/noel.jpeg" alt="Noel Picture" width="200">
+
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year3"></span> Nyumba.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
